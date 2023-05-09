@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -17,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.submit_button).setOnClickListener {
-
             val fullName = findViewById<EditText>(R.id.full_name).text.toString()
             if (fullName.isNotEmpty()) {
                 // Set Name of activity to launch
